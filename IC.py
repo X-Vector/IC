@@ -31,12 +31,14 @@ try:
         if IC >= 0.040 and IC <= 0.055:
             print "Index of Coincidence =",IC
             print "The Message has Probably Been Crypted Using a Vigenere cipher"
-        if IC >= 0.02 and IC < 0.040:
+        elif IC >= 0.02 and IC < 0.040:
             print "Index of Coincidence =",IC
             print "Similar To a Random Text, Then The Message has Probably Been Crypted Using a Polyalphabetic Cipher"
-        if IC > 0.055 and IC < 1:
+        elif IC > 0.067 and IC < 1:
             print "Index of Coincidence =",IC
             print "The Message has Probably Been Crypted Using a Transposition Cipher or a Monoalphabetic Substitution"
+        else :
+            print "Can't Define The Cipher"
         
     else:
         print "Can't Define The Cipher"
